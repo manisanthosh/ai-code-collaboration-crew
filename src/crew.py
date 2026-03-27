@@ -19,7 +19,7 @@ def build_crew(feature_request: str):
 
     coding_task = create_coding_task(backend, feature_request)
 
-    review_task = create_review_task(reviewer, "{coding_task_output}")
+    # review_task = create_review_task(reviewer, "{coding_task_output}")
     # testing_task = create_testing_task(tester, "{review_task_output}")
 
     github_agent = get_github_agent()
@@ -29,8 +29,8 @@ def build_crew(feature_request: str):
     )
 
     return Crew(
-        agents=[backend, reviewer, github_agent],
-        tasks=[coding_task, review_task, github_task],
+        agents=[backend, github_agent],
+        tasks=[coding_task, github_task],
         verbose=True,
         memory=False,
     )
