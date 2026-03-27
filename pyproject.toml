@@ -9,6 +9,7 @@ dependencies = [
     "crewai",
     "litellm>=1.75.3",
     "openai",
+    "pygithub>=2.9.0",
     "python-dotenv",
 ]
 
