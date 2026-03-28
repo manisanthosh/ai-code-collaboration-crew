@@ -70,4 +70,4 @@ python main.py --feature "Create a function to validate email addresses"
 
 ## 👩‍💻 Author
 
-Your Name
+Pranali Bose
