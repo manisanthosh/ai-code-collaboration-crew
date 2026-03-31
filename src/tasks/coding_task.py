@@ -3,7 +3,7 @@ from crewai import Task
 def create_coding_task(agent, feature_request):
     return Task(
         description=f"""
-        Build a any programe/function for the following requirement:
+        Build a python function for the following requirement:
 
         {feature_request}
 
